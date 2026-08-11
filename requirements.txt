@@ -1,0 +1,4 @@
+crewai[litellm]
+crewai-tools
+python-dotenv
+pydantic
