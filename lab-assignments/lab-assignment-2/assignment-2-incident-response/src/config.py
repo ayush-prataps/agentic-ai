@@ -6,7 +6,7 @@ import crewai.llms.cache as crewai_cache
 from crewai import LLM
 
 
-PROJECT_ROOT = Path(__file__).resolve().parents[3]
+PROJECT_ROOT = Path(__file__).resolve().parents[4]
 ENV_FILE = PROJECT_ROOT / ".env"
 
 load_dotenv(ENV_FILE)
@@ -25,6 +25,6 @@ if not GROQ_API_KEY:
 
 
 llm = LLM(
-    model="groq/llama-3.3-70b-versatile",
+    model="groq/qwen/qwen3.6-27b",
     temperature=0.2,
 )

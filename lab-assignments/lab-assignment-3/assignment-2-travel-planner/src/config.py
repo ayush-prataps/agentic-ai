@@ -8,12 +8,10 @@ from crewai import LLM
 
 PROJECT_ROOT = Path(__file__).resolve().parents[4]
 ENV_FILE = PROJECT_ROOT / ".env"
-
 load_dotenv(ENV_FILE)
 
 
-# CrewAI injects cache_breakpoint into messages.
-# Groq rejects this provider-specific field.
+# Groq compatibility workaround.
 crewai_cache.mark_cache_breakpoint = lambda message: message
 
 

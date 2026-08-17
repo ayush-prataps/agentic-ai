@@ -2,3 +2,6 @@ crewai[litellm]
 crewai-tools
 python-dotenv
 pydantic
+sentence-transformers==5.7.0
+tokenizers==0.22.2
+groq
